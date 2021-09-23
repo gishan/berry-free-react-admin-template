@@ -15,11 +15,11 @@ const AuthenticationRoutes = () => {
     const location = useLocation();
 
     return (
-        <Route path={['/pages/login/login3', '/pages/register/register3']}>
+        <Route path={['/login', '/register']}>
             <MinimalLayout>
                 <Switch location={location} key={location.pathname}>
-                    <Route path="/pages/login/login3" component={AuthLogin3} />
-                    <Route path="/pages/register/register3" component={AuthRegister3} />
+                    <Route path="/login" component={AuthLogin3} />
+                    <Route path="/register" component={AuthRegister3} />
                 </Switch>
             </MinimalLayout>
         </Route>

@@ -17,6 +17,7 @@ const UtilsTablerIcons = Loadable(lazy(() => import('../views/utilities/TablerIc
 
 // sample page routing
 const SamplePage = Loadable(lazy(() => import('../views/sample-page')));
+const TeacherPage = Loadable(lazy(() => import('../views/teachers')));
 
 //-----------------------|| MAIN ROUTING ||-----------------------//
 
@@ -48,6 +49,7 @@ const MainRoutes = () => {
                     <Route path="/icons/material-icons" component={UtilsMaterialIcons} />
 
                     <Route path="/sample-page" component={SamplePage} />
+                    <Route path="/teachers" component={TeacherPage} />
                 </Switch>
             </MainLayout>
         </Route>
